@@ -1,0 +1,848 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Cinema</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="discription" content="rap chieu phim, dat ve, khuyen mai" />
+        <meta name="keywords" content="rap-chieu-phim, cinema, dat-ve" />
+        <meta name="author" content="Tran Van Tam" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header__home">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./assets/images/logo-touchcinema.png" alt="logo-cinema" title="logo-cinema" />
+                        </a>
+                    </div>
+                    <div class="header__content">
+                        <div class="header__details">
+                            <div class="header__book">
+                                <a href="#">
+                                    <img src="./assets/images/dat-ve-ngay.png" alt="" title="" />
+                                </a>
+                            </div>
+                            <div class="header__searchAndLanguage">
+                                <div class="header__search">    
+                                    <input class="input__search" name="search" type="text" placeholder="Tìm kiếm" />
+                                    <div class="icon-search">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </div>
+                                <div class="header__language">
+                                    <img src="./assets/images/vn.png" alt="" title="" />
+                                </div>
+                            </div>
+                            <div class="header__login">
+                                <a class="a-sign-up" href="#">
+                                    <div class="sign-up">ĐĂNG KÝ THÀNH VIÊN</div>
+                                </a>
+                                <a class="a-sign-in" href="#">
+                                    <div class="sign-in">ĐĂNG NHẬP</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header__cross"></div>
+                        <div class="header__menu">
+                            <ol class="nav">
+                                <li class="nav__item active">
+                                    <a class="nav__link" href="#">TRANG CHỦ</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">PHIM</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">LỊCH CHIẾU</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">GIÁ VÉ</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">THÀNH VIÊN</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">ƯU ĐÃI - SỰ KIỆN</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">ĐÁNH GIÁ PHIM</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">GIỚI THIỆU</a>
+                                </li>
+                                <li class="nav__item nav__item--service">
+                                    <a class="nav__link" href="javascript:void(0)">DỊCH VỤ</a>                                         
+                                    <div class="dropdown">
+                                        <ol class="dropdown__menu">
+                                            <li class="dropdown__item">
+                                                <a href="#">Dịch vụ quảng cáo - sự kiện</a>
+                                            </li>
+                                            <li class="dropdown__item">
+                                                <a href="#">Touch Voucher</a>
+                                            </li>
+                                        </ol>
+                                    </div>                               
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">LIÊN HỆ</a>
+                                </li>
+                                <li>
+                                    <button class="nav__bell">
+                                        <i class="fa fa-bell"></i>
+                                    </button>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel">
+                <div class="carousel__inner">
+                    <div class="carousel__item">
+                        <a href="#">
+                            <img src="./assets/images/slide1.jpg" alt="" title="" />
+                        </a>
+                    </div>
+                    <div class="carousel__item">
+                        <a href="#">
+                            <img src="./assets/images/bloodshot-sneak.jpg" alt="" title="" />
+                        </a>
+                    </div>
+                    <div class="carousel__item">
+                        <a href="#">
+                            <img src="./assets/images/can-ho-cua-quy.jpg" alt="" title="" />
+                        </a>
+                    </div>
+                    <div class="carousel__item">
+                        <a href="#">
+                            <img src="./assets/images/nang-3.jpg" alt="" title="" />
+                        </a>
+                    </div>
+                    <div class="carousel__item">
+                        <a href="#">
+                            <img src="./assets/images/wild.jpg" alt="" title="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel__controls">
+                    <div class="carousel__controls--prev" id="prev"></div>
+                    <div class="carousel__controls--next" id="next"></div>
+                </div> 
+                <div class="dot">
+                    <div class="dot__item active" index="0"></div>
+                    <div class="dot__item" index="1"></div>
+                    <div class="dot__item" index="2"></div>
+                    <div class="dot__item" index="3"></div>
+                    <div class="dot__item" index="4"></div>
+                </div>
+            </div>
+        </header>
+        <div class="body">
+            <div class="body__cross"></div>
+            <section class="section section__chooseFilms">                
+                <div class="container">
+                    <div class="tabs">
+                        <button class="tabs__films tabs__films--nowShow active-tab" index="0">
+                            <img src="assets/images/icon-ticket.png" />
+                            <span>PHIM ĐANG CHIẾU</span>
+                        </button>
+                        <button class="tabs__films tabs__films--comingSoon" index="1">
+                            <img src="assets/images/icon-sap-chieu.png" />
+                            <span>PHIM SẮP CHIẾU</span>
+                        </button>
+                    </div>
+                    <!-- Slider now show -->
+                    <div class="owl-carousel owl-theme owl-loaded owl__nowShow slider-tabFilms" id="owl-nowShow">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage">
+                                <div class="owl-item">
+                                    <div class="poster">
+                                        <a href="#">
+                                            <img src="assets/images/poster-bloodshot.jpg" title="" alt="" />
+                                        </a>
+                                        <div class="info">
+                                            <div class="info__bg"></div>
+                                            <div class="info__home">
+                                                <div class="info__details">                                                
+                                                    <div class="info__details--detail">
+                                                        <a href="#">
+                                                            <button>CHI TIẾT</button>
+                                                        </a>
+                                                    </div>
+                                                    <div class="info__details--buyTicket">
+                                                        <a href="#">
+                                                            <button>MUA VÉ</button>
+                                                        </a>
+                                                    </div>                                                
+                                                    <div class="info__details--duration">
+                                                        <b>Thời Lượng: </b><span>110 Phút</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--category">
+                                                        <b>Thể Loại: </b><span>Hành Động</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--format">
+                                                        <b>Định Dạng: </b><span>2D</span>                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="details__title">
+                                            <a href="#">BLOODSHOOT</a>
+                                        </div>
+                                        <div class="details__time">Khởi chiếu: 13/03/2020</div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="poster">
+                                        <a href="#">
+                                            <img src="assets/images/poster-can-ho-quy.jpg" title="" alt="" />
+                                        </a>
+                                        <div class="info">
+                                            <div class="info__bg"></div>
+                                            <div class="info__home">
+                                                <div class="info__details">                                                
+                                                    <div class="info__details--detail">
+                                                        <a href="#">
+                                                            <button>CHI TIẾT</button>
+                                                        </a>
+                                                    </div>
+                                                    <div class="info__details--buyTicket">
+                                                        <a href="#">
+                                                            <button>MUA VÉ</button>
+                                                        </a>
+                                                    </div>                                                
+                                                    <div class="info__details--duration">
+                                                        <b>Thời Lượng: </b><span>105 Phút</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--category">
+                                                        <b>Thể Loại: </b><span>Kinh Dị</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--format">
+                                                        <b>Định Dạng: </b><span>2D</span>                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="details__title">
+                                            <a href="#">CĂN HỘ CỦA QUỶ</a>
+                                        </div>
+                                        <div class="details__time">Khởi chiếu: 6/03/2020</div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="poster">
+                                        <a href="#">
+                                            <img src="assets/images/poster-nang.jpg" title="" alt="" />
+                                        </a>
+                                        <div class="info">
+                                            <div class="info__bg"></div>
+                                            <div class="info__home">
+                                                <div class="info__details">                                                
+                                                    <div class="info__details--detail">
+                                                        <a href="#">
+                                                            <button>CHI TIẾT</button>
+                                                        </a>
+                                                    </div>
+                                                    <div class="info__details--buyTicket">
+                                                        <a href="#">
+                                                            <button>MUA VÉ</button>
+                                                        </a>
+                                                    </div>                                                
+                                                    <div class="info__details--duration">
+                                                        <b>Thời Lượng: </b><span>110 Phút</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--category">
+                                                        <b>Thể Loại: </b><span>Tình Cảm</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--format">
+                                                        <b>Định Dạng: </b><span>2D</span>                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="details__title">
+                                            <a href="#">NẰNG 3: LỜI HỨA CỦA CHA</a>
+                                        </div>
+                                        <div class="details__time">Khởi chiếu: 6/03/2020</div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="poster">
+                                        <a href="#">
+                                            <img src="assets/images/poster-sat-thu.jpg" title="" alt="" />
+                                        </a>
+                                        <div class="info">
+                                            <div class="info__bg"></div>
+                                            <div class="info__home">
+                                                <div class="info__details">                                                
+                                                    <div class="info__details--detail">
+                                                        <a href="#">
+                                                            <button>CHI TIẾT</button>
+                                                        </a>
+                                                    </div>
+                                                    <div class="info__details--buyTicket">
+                                                        <a href="#">
+                                                            <button>MUA VÉ</button>
+                                                        </a>
+                                                    </div>                                                
+                                                    <div class="info__details--duration">
+                                                        <b>Thời Lượng: </b><span>110 Phút</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--category">
+                                                        <b>Thể Loại: </b><span>Phim Hài</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--format">
+                                                        <b>Định Dạng: </b><span>2D</span>                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="details__title">
+                                            <a href="#">SÁT THỦ VÔ CÙNG CỰC</a>
+                                        </div>
+                                        <div class="details__time">Khởi chiếu: 20/03/2020</div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="poster">
+                                        <a href="#">
+                                            <img src="assets/images/poster-vi-anh-van-tin.jpg" title="" alt="" />
+                                        </a>
+                                        <div class="info">
+                                            <div class="info__bg"></div>
+                                            <div class="info__home">
+                                                <div class="info__details">                                                
+                                                    <div class="info__details--detail">
+                                                        <a href="#">
+                                                            <button>CHI TIẾT</button>
+                                                        </a>
+                                                    </div>
+                                                    <div class="info__details--buyTicket">
+                                                        <a href="#">
+                                                            <button>MUA VÉ</button>
+                                                        </a>
+                                                    </div>                                                
+                                                    <div class="info__details--duration">
+                                                        <b>Thời Lượng: </b><span>117 Phút</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--category">
+                                                        <b>Thể Loại: </b><span>Tình Cảm</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--format">
+                                                        <b>Định Dạng: </b><span>2D</span>                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="details__title">
+                                            <a href="#">VÌ ANH VẪN TIN</a>
+                                        </div>
+                                        <div class="details__time">Khởi chiếu: 13/03/2020</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                                           
+                    </div>
+                    <!-- slider coming soon -->
+                    <div class="owl-carousel owl-theme owl-loaded owl__comingSoon slider-tabFilms" id="owl-comingSoon">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage">
+                                <div class="owl-item">
+                                    <div class="poster">
+                                        <a href="#">
+                                            <img src="assets/images/poster-baba.jpg" title="" alt="" />
+                                        </a>
+                                        <div class="info">
+                                            <div class="info__bg"></div>
+                                            <div class="info__home">
+                                                <div class="info__details">                                                
+                                                    <div class="info__details--detail">
+                                                        <a href="#">
+                                                            <button>CHI TIẾT</button>
+                                                        </a>
+                                                    </div>
+                                                    <div class="info__details--buyTicket">
+                                                        <a href="#">
+                                                            <button>MUA VÉ</button>
+                                                        </a>
+                                                    </div>                                                
+                                                    <div class="info__details--duration">
+                                                        <b>Thời Lượng: </b><span>100 Phút</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--category">
+                                                        <b>Thể Loại: </b><span>Kinh Dị</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--format">
+                                                        <b>Định Dạng: </b><span>2D</span>                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="details__title">
+                                            <a href="#">BABA YAGA: ÁC QUỶ RỪNG SÂU</a>
+                                        </div>
+                                        <div class="details__time">Khởi chiếu: 27/03/2020</div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="poster">
+                                        <a href="#">
+                                            <img src="assets/images/poster-di-nhan.jpg" title="" alt="" />
+                                        </a>
+                                        <div class="info">
+                                            <div class="info__bg"></div>
+                                            <div class="info__home">
+                                                <div class="info__details">                                                
+                                                    <div class="info__details--detail">
+                                                        <a href="#">
+                                                            <button>CHI TIẾT</button>
+                                                        </a>
+                                                    </div>
+                                                    <div class="info__details--buyTicket">
+                                                        <a href="#">
+                                                            <button>MUA VÉ</button>
+                                                        </a>
+                                                    </div>                                                
+                                                    <div class="info__details--duration">
+                                                        <b>Thời Lượng: </b><span>100 Phút</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--category">
+                                                        <b>Thể Loại: </b><span>Hành Động</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--format">
+                                                        <b>Định Dạng: </b><span>2D</span>                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="details__title">
+                                            <a href="#">DỊ NHÂN THẾ GIỚI MỚI</a>
+                                        </div>
+                                        <div class="details__time">Khởi chiếu: 03/04/2020</div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="poster">
+                                        <a href="#">
+                                            <img src="assets/images/poster-bi-mat-khung-cua.jpg" title="" alt="" />
+                                        </a>
+                                        <div class="info">
+                                            <div class="info__bg"></div>
+                                            <div class="info__home">
+                                                <div class="info__details">                                                
+                                                    <div class="info__details--detail">
+                                                        <a href="#">
+                                                            <button>CHI TIẾT</button>
+                                                        </a>
+                                                    </div>
+                                                    <div class="info__details--buyTicket">
+                                                        <a href="#">
+                                                            <button>MUA VÉ</button>
+                                                        </a>
+                                                    </div>                                                
+                                                    <div class="info__details--duration">
+                                                        <b>Thời Lượng: </b><span>100 Phút</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--category">
+                                                        <b>Thể Loại: </b><span>Kinh Dị</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--format">
+                                                        <b>Định Dạng: </b><span>2D</span>                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="details__title">
+                                            <a href="#">BÍ MẬT BÊN KIA KHUNG CỬA</a>
+                                        </div>
+                                        <div class="details__time">Khởi chiếu: 15/05/2020</div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="poster">
+                                        <a href="#">
+                                            <img src="assets/images/poster-vo-dien-sat-nhan.png" title="" alt="" />
+                                        </a>
+                                        <div class="info">
+                                            <div class="info__bg"></div>
+                                            <div class="info__home">
+                                                <div class="info__details">                                                
+                                                    <div class="info__details--detail">
+                                                        <a href="#">
+                                                            <button>CHI TIẾT</button>
+                                                        </a>
+                                                    </div>
+                                                    <div class="info__details--buyTicket">
+                                                        <a href="#">
+                                                            <button>MUA VÉ</button>
+                                                        </a>
+                                                    </div>                                                
+                                                    <div class="info__details--duration">
+                                                        <b>Thời Lượng: </b><span>110 Phút</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--category">
+                                                        <b>Thể Loại: </b><span>Kinh Dị</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--format">
+                                                        <b>Định Dạng: </b><span>2D</span>                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="details__title">
+                                            <a href="#">VÔ DIỆN SÁT NHÂN</a>
+                                        </div>
+                                        <div class="details__time">Khởi chiếu: 17/04/2020</div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="poster">
+                                        <a href="#">
+                                            <img src="assets/images/poster-phi-vu-tau-thoat.jpg" title="" alt="" />
+                                        </a>
+                                        <div class="info">
+                                            <div class="info__bg"></div>
+                                            <div class="info__home">
+                                                <div class="info__details">                                                
+                                                    <div class="info__details--detail">
+                                                        <a href="#">
+                                                            <button>CHI TIẾT</button>
+                                                        </a>
+                                                    </div>
+                                                    <div class="info__details--buyTicket">
+                                                        <a href="#">
+                                                            <button>MUA VÉ</button>
+                                                        </a>
+                                                    </div>                                                
+                                                    <div class="info__details--duration">
+                                                        <b>Thời Lượng: </b><span>100 Phút</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--category">
+                                                        <b>Thể Loại: </b><span>Hành Động</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--format">
+                                                        <b>Định Dạng: </b><span>2D</span>                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="details__title">
+                                            <a href="#">PHI VỤ TẨU THOÁT</a>
+                                        </div>
+                                        <div class="details__time">Khởi chiếu: 02/04/2020</div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="poster">
+                                        <a href="#">
+                                            <img src="assets/images/poster-khu-rung-huyen-bi.jpg" title="" alt="" />
+                                        </a>
+                                        <div class="info">
+                                            <div class="info__bg"></div>
+                                            <div class="info__home">
+                                                <div class="info__details">                                                
+                                                    <div class="info__details--detail">
+                                                        <a href="#">
+                                                            <button>CHI TIẾT</button>
+                                                        </a>
+                                                    </div>
+                                                    <div class="info__details--buyTicket">
+                                                        <a href="#">
+                                                            <button>MUA VÉ</button>
+                                                        </a>
+                                                    </div>                                                
+                                                    <div class="info__details--duration">
+                                                        <b>Thời Lượng: </b><span>100 Phút</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--category">
+                                                        <b>Thể Loại: </b><span>Phiêu Lưu</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--format">
+                                                        <b>Định Dạng: </b><span>2D</span>                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="details__title">
+                                            <a href="#">KHU RỪNG HUYỀN BÍ</a>
+                                        </div>
+                                        <div class="details__time">Khởi chiếu: 17/04/2020</div>
+                                    </div>
+                                </div>
+                                <div class="owl-item">
+                                    <div class="poster">
+                                        <a href="#">
+                                            <img src="assets/images/poster-samsam.jpg" title="" alt="" />
+                                        </a>
+                                        <div class="info">
+                                            <div class="info__bg"></div>
+                                            <div class="info__home">
+                                                <div class="info__details">                                                
+                                                    <div class="info__details--detail">
+                                                        <a href="#">
+                                                            <button>CHI TIẾT</button>
+                                                        </a>
+                                                    </div>
+                                                    <div class="info__details--buyTicket">
+                                                        <a href="#">
+                                                            <button>MUA VÉ</button>
+                                                        </a>
+                                                    </div>                                                
+                                                    <div class="info__details--duration">
+                                                        <b>Thời Lượng: </b><span>100 Phút</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--category">
+                                                        <b>Thể Loại: </b><span>Hoạt Hình</span>                                                    
+                                                    </div>
+                                                    <div class="info__details--format">
+                                                        <b>Định Dạng: </b><span>2D</span>                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="details__title">
+                                            <a href="#">SAMSAM: SIÊU NHÂN TẬP SỰ</a>
+                                        </div>
+                                        <div class="details__time">Khởi chiếu: 03/04/2020</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                                           
+                    </div>
+                </div>
+            </section>
+            <section class="section section__news">
+                <div class="container">
+                    <div class="news__home">
+                        <div class="eventAndRating">
+                            <div class="news__event">
+                                <h2 class="news__event--title">ƯU ĐÃI - SỰ KIỆN</h2>
+                                <div class="owl-carousel owl-theme owl-loaded post__event slider-event">
+                                    <div class="owl-stage-outer">
+                                        <div class="owl-stage">
+                                            <div class="owl-item">
+                                                <div class="post__event--image">
+                                                    <a href="#">
+                                                        <img src="assets/images/event1.jpg" title="" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="post__event--title">
+                                                    <a href="#">NGHỈ LỄ VUI VẺ - GIÁ LẠI "HẠT DẺ"</a>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item">
+                                                <div class="post__event--image">
+                                                    <a href="#">
+                                                        <img src="assets/images/event2.jpg" title="" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="post__event--title">
+                                                    <a href="#">8/3 GIẢM NGAY 38K</a>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item">
+                                                <div class="post__event--image">
+                                                    <a href="#">
+                                                        <img src="assets/images/event3.png" title="" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="post__event--title">
+                                                    <a href="#">WE LOVE - love TOUCH CINEMA</a>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item">
+                                                <div class="post__event--image">
+                                                    <a href="#">
+                                                        <img src="assets/images/event4.png" title="" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="post__event--title">
+                                                    <a href="#">HAPPY BIRTHDAY QUAY NGAY QUÀ KHỦNG</a>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item">
+                                                <div class="post__event--image">
+                                                    <a href="#">
+                                                        <img src="assets/images/event5.jpg" title="" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="post__event--title">
+                                                    <a href="">LÌ XÌ THẢ GA - PHÚC LỘC ĐẦY NHÀ</a>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item">
+                                                <div class="post__event--image">
+                                                    <a href="#">
+                                                        <img src="assets/images/event6.png" title="" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="post__event--title">
+                                                    <a href="#">THỬ THÁCH HALLOWEEN</a>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item">
+                                                <div class="post__event--image">
+                                                    <a href="#">
+                                                        <img src="assets/images/event8.png" title="" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="post__event--title">
+                                                    <a href="#">CHỤC ẢNH CHECKIN TẠI TOUCH CINEMA</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news__rating">
+
+                            </div>
+                        </div>
+                        <aside class="bookTicket">
+                            <div class="bookTicket__home">
+                                <div class="iframe__fb">
+                                    <iframe name="f308553ef136bec" width="390px" height="1000px" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v2.9/plugins/page.php?adapt_container_width=true&amp;app_id=1700069773628064&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D46%23cb%3Df3fba9539b7373c%26domain%3Dtouchcinema.com%26origin%3Dhttps%253A%252F%252Ftouchcinema.com%252Ff38b670a8b755d%26relation%3Dparent.parent&amp;container_width=360&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Ftouchcinema%2F&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;width=390" style="border: none; visibility: visible; width: 360px; height: 196px;" class=""></iframe>
+                                </div>
+                                <div class="widget__ticket">
+                                    <button class="widget__ticket--book">
+                                        <img src="assets/images/icon-ticket.png" />
+                                        <span>ĐẶT VÉ</span>
+                                    </button>
+                                    <form>
+                                        <div class="select__group">                                            
+                                            <select class="form__chooseFilms">
+                                                <option value="0" selected>Chọn Phim</option>
+                                                <option value="1">BloodShoot</option>
+                                                <option value="2">Nắng 3: Lời Hứa Của Cha</option>
+                                                <option value="3">Căn Hộ Của Quỷ</option>
+                                                <option value="4">Sát Thủ Vô Cùng Cực</option>
+                                                <option value="5">Vì Anh Vẫn Tin</option>
+                                            </select>
+                                        </div>
+                                        <div class="select__group">                                            
+                                            <select class="form__chooseFilms">
+                                                <option value="0" selected>Chọn Ngày</option>                                                
+                                            </select>
+                                        </div>
+                                        <div class="select__group">                                            
+                                            <select class="form__chooseFilms">
+                                                <option value="0" selected>Chọn Suất</option>                                                
+                                            </select>
+                                        </div>
+                                        <button class="btn__buyTicket">MUA VÉ</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+        </div>  
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__home">
+                    <div class="customer">
+                        <div class="customer__care">
+                            <h2>CHĂM SÓC KHÁCH HÀNG</h2>
+                            <div>Hotline: 0916 104 500</div>
+                            <div>Giờ làm việc: 8h00-22h00 tất cả ngày trong tuần</div>
+                            <div>Email: tvantam1475369@gmail.com</div>
+                        </div>
+                        <div class="customer__connect">
+                            <h2>KẾT NỐI VỚI CHÚNG TÔI</h2>
+                            <div class="connect__icon">
+                                <a href="#">
+                                    <div class="connect__icon--facebook">
+                                        <i class="fa fa-facebook"></i>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="connect__icon--youtube">
+                                        <i class="fa fa-youtube"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <h2>ỨNG DỤNG</h2>
+                            <a href="#">
+                                <img src="assets/images/app-ios.png" />
+                            </a>
+                            <a href="#">
+                                <img src="assets/images/app-android.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cross"></div>
+                    <div class="rules">
+                        <div>
+                            <div>
+                                <a href="#">Điều khoản chung</a>
+                            </div>
+                            <div>
+                                <a href="#">Điều khoản giao dịch</a>
+                            </div>
+                            <div>
+                                <a href="#">Chính sách thanh toán</a>
+                            </div>
+                            <div>
+                                <a href="#">Chính sách bảo mật</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <a href="#">Câu hỏi thườn gặp</a>
+                            </div>
+                            <div>
+                                <a href="#">Hướng dẫn đặt vé online</a>
+                            </div>
+                            <div>
+                                <a href="#">Liên hệ</a>
+                            </div>
+                            <div>
+                                <a href="#">Tuyển dụng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="bell__info"> 
+            <div class="animate__circle"></div>
+            <div class="bell__info--text"></div>
+            <button>
+                <i class="fa fa-bell"></i>
+            </button>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="script.js"></script>       
+    </body>
+</html>

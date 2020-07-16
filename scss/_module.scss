@@ -1,0 +1,17 @@
+@import './module/layout';
+// ==== Header ==== //
+@import './module/header';
+@import './module/header/headerHome';
+@import './module/header/login';
+@import './module/header/menu';
+@import './module/header/carousel';
+// ==== body ==== //
+@import './module/body';
+@import './module/body/bodyHome';
+@import './module/body/bookTicket';
+@import './module/body/ratingFilm';
+@import './module/body/slider';
+// ==== aside ==== //
+@import './module/aside';
+// ==== footer ==== //
+@import './module/footer';

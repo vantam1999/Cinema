@@ -1,0 +1,79 @@
+footer {
+    position: relative;
+    background-image: url("assets/images/footer.png");
+    .cross {
+        width: 3px;
+        height: inherit;
+        background-color: $colorPink;
+    }
+}
+.footer__home {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 15px 0;
+    .customer {
+        display: flex;
+        justify-content: space-between;
+        width:  64%; 
+    }
+    .rules {
+        display: flex;
+        justify-content: space-between;
+        width: 33%; 
+    }
+}
+.customer__care, 
+.customer__connect {
+    padding-right: 20px;
+    & > * {
+        margin: 10px 0;
+    }
+    h2 {
+        color: $colorPink;
+        font-size: 18px;
+    }   
+}
+.customer__care {    
+    & > div {
+        font-size: 15px;
+        color: #ffffff;
+    }
+}
+.connect__icon {
+    display: flex;   
+    &--facebook,
+    &--youtube {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    i {
+        color: #ffffff;
+        font-size: 20px;
+    }
+    &--facebook {
+        background-color: #0404f8;
+        margin-right: 10px;
+    }
+    &--youtube {
+        background-color: #ff0404;
+    }
+}
+.rules a {
+    color: #ffffff;
+    font-size: 15px;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.rules > div {
+    padding-right: 20px;
+}
+.rules > div > * {
+    margin: 10px 0;
+}

@@ -1,0 +1,45 @@
+.header__login {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 310px;
+    height: inherit;
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+.sign-up,
+.sign-in {        
+    position: absolute;    
+    background-repeat: no-repeat;    
+    width: 100px;    
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+   
+}
+.sign-up {    
+    top: 50%;
+    transform: translateY(-46%);
+    left: 0;
+    background-image: url('assets/images/sign-up-bg.png');
+    padding: 10px 50px 10px 38px;
+    color: #000000;
+    transition: .4s;
+    z-index: 1;
+    &:hover {
+        z-index: 3;
+        transition: .4s;
+    }
+}
+.sign-in {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background-image: url('assets/images/sign-in-bg.png');
+    padding: 17px 38px 17px 38px;
+    margin-bottom: -5px;
+    color: #ffffff;
+    z-index: 2;
+}

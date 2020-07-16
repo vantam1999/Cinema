@@ -1,0 +1,82 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    &__item {
+        position: relative;
+        padding: 10px 0;        
+        &:hover {
+            background-color: $colorPink;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: -6px;
+                bottom: 0;
+                width: 11px;
+                background-color: $colorPink;
+                transform: skew(-15deg);
+                z-index: 2;
+                cursor: pointer;
+            }
+        }  
+    }
+    .active {
+        background-color: $colorPink;        
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -6px;
+            bottom: 0;
+            width: 11px;
+            background-color: $colorPink;
+            transform: skew(-15deg);
+            z-index: 2;
+        }
+    }
+    &__link {
+        font-size: 14px;
+        color: #ffffff;
+        padding: 10px;       
+    }
+    &__bell {
+        margin-left: 55px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: $colorPink;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        i {
+            color: #ffffff;
+            font-size: 20px;
+        }
+    }
+}
+.nav__item--service {
+    .dropdown {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        z-index: 99999;
+    }
+    .dropdown__item {
+        padding: 12px 15px;
+        width: 200px;
+        background-color: $colorPink;
+        &:hover {
+            background-color: $colorPurple;
+        }
+        a {
+            color: #ffffff;
+            font-size: 14px;
+            padding: 10px;
+        }
+    }
+}
+.nav__item--service:hover .dropdown{
+    display: block;
+}

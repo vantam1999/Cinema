@@ -1,0 +1,97 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    &:hover .carousel__controls--prev {       
+        left: 5px;
+        transition: .2s;
+    }
+    &:hover .carousel__controls--next {
+        right: 5px;        
+        transition: .2s;
+    }
+}
+.carousel__inner, 
+.carousel__controls {
+    height: 530px;
+}
+.carousel__inner {
+    display: flex;        
+}
+.carousel__item {
+    height: inherit;
+}
+.carousel__item a,
+.carousel__item img {
+    width: inherit;
+    height: inherit;
+} 
+.carousel__controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;    
+    &:hover {
+        cursor: pointer;
+    }
+    &--prev,
+    &--next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 45px;
+        height: 45px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        transition: .2s;
+        z-index: 3;        
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;            
+            margin-top: -20px;                               
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 40px;
+            height: 40px;
+        }
+    }
+    &--prev {        
+        left: -50px;       
+        &::after {
+            left: 0; 
+            background-image: url('assets/images/arrow-left.png');
+        }
+    }
+    &--next {
+        right: -50px;                      
+        &::after {
+            right: 0;
+            background-image: url('assets/images/arrow-right.png');
+        }
+    }   
+}
+.dot {    
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: #2a1b3d;
+    &__item {
+        width: 20px;
+        height: 20px;
+        border: 2px solid $colorPink;
+        box-sizing: border-box;
+        border-radius: 50%;
+        margin: 0 5px;
+        &:hover {
+            cursor: pointer;
+        }
+    }    
+    .active {
+        background-color: $colorPink;
+    }
+}
+
